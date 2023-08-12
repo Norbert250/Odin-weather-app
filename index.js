@@ -16,8 +16,8 @@
       }`;
       getWeather(userLocation);
     };
-    const errorCallback = () => {
-      alert('The Location you entered does not exist');
+    const errorCallback = (error) => {
+      alert(error);
     };
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
   });
