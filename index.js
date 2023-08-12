@@ -17,7 +17,7 @@
       getWeather(userLocation);
     };
     const errorCallback = (error) => {
-      alert('error');
+      alert(error);
     };
     navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
   });
