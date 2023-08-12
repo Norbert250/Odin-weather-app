@@ -41,8 +41,8 @@
       );
       const data = await response.json();
       displayWeather(data);
-    } catch (err) {
-      alert(err);
+    } catch () {
+      alert('The Location you entered does not exist');
     }
   }
 
