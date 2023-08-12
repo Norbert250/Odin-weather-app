@@ -16,6 +16,7 @@
       }`;
       getWeather(userLocation);
     };
+    var error = 'the location you entered does not exist'
     const errorCallback = (error) => {
       alert(error);
     };
